@@ -12,6 +12,8 @@
     @import "../assets/scss/variable";
 
     .form-container {
+        display: flex;
+        flex-direction: column;
         border-radius: $form-border-radius;
         box-shadow: $form-box-shadow;
         background-color: $form-bg-color;

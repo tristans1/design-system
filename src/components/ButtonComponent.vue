@@ -1,57 +1,47 @@
 <template>
-    <button :class='buttonColorType === "main" ? "button-main" : "button-alt"'>
+    <button :class='styleType === "main" ? "button-main" : "button-alt"' :type="type">
         <slot></slot>
     </button>
 </template>
 <script>
-
-export default {
-    name: 'ButtonComponent',
-    props: {
-        buttonText: {
-            type: String,
-            default: () => "label",
+    export default {
+        name: 'ButtonComponent',
+        props: {
+            type: {
+                type: String,
+                required: true
+            },
+            styleType: {
+                type: String,
+                required: true,
+            },
         },
-
-        buttonColorType: {
-            type: String,
-            required: true,
+    };
+</script>
+<style scoped lang="scss">
+    @import '../assets/scss/variable';
+    button {
+        cursor: pointer;
+        border: $button-border;
+        border-radius: $button-border-radius;
+        min-width: $button-minWidth;
+        padding: $button-padding;
+        font-family: $primary-font-main;
+        font-size: $font-regular-size;
+        margin: $spacing-m 0;
+    }
+    .button-main {
+        color: $btn-main-color;
+        background-color: $btn-main-bg;
+        &:hover {
+            background-color: $btn-main-hover-bg;
         }
     }
-}
-</script>
-
-<style scoped lang="scss">
-@import '../assets/scss/variable';
-
-button {
-    border        : $button-border;
-    border-radius : $button-border-radius;
-    min-width     : $button-minWidth;
-    padding       : $button-padding;
-    font-family   : $primary-font-main;
-    font-size     : $font-regular-size;
-}
-
-.button-main {
-    color            : $white-color;
-    background-color : $main-color-light ;
-
-    &:hover {
-        background-color : $main-color-dark;
-        color            : $white-color;
+    .button-alt {
+        background-color: $btn-alt-bg;
+        color: $btn-alt-color;
+        &:hover {
+            background-color: $btn-alt-hover-bg;
+        }
     }
-}
-
-.button-alt {
-    background-color : $white-color;
-    color            : $main-color-light;
-   
-    
-    &:hover {
-        background-color : $second-color;
-        color            : $main-color-light;
-    }
-}
-
 </style>

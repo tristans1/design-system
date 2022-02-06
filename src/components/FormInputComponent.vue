@@ -1,7 +1,7 @@
 <template>
     <div class="form-control">
         <label :for="name"> {{ label }}</label>
-        <FlexContainerComponent class="input-control">
+        <flex-container-component class="input-control">
             <input class="flex-grow-1"
                    :type="inputType"
                    :name="name" :id="name"
@@ -13,10 +13,10 @@
                 @click="showPassword"
                 type="button"
                 class="btn-transparent flex-grow-0">
-                <EyeOpenIcon v-if="inputType === 'password'"/>
-                <EyeCloseIcon v-if="inputType === 'text'"/>
+                <eye-open-icon v-if="inputType === 'password'"/>
+                <eye-close-icon v-if="inputType === 'text'"/>
             </button>
-        </FlexContainerComponent>
+        </flex-container-component>
     </div>
 </template>
 <script>
@@ -84,12 +84,10 @@
             border: $input-border;
             border-radius: $input-border-radius;
             padding: $spacing-l;
-            &:focus-within {
-                outline: $input-outline;
-            }
+            background-color: $input-bg-color;
             input{
-                font-size: $font-regular-size;
-                font-weight: $font-regular-weight;
+                font-weight: $input-font-weight;
+                font-size: $input-font-size;
                 font-family: $primary-font-main;
                 border: none;
                 outline: none;
@@ -97,6 +95,9 @@
                     font-family: $primary-font-main;
                     color: $second-color-darker;
                 }
+            }
+            &:focus-within {
+                outline: $input-outline;
             }
         }
     }
