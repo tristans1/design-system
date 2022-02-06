@@ -1,3 +1,5 @@
+@import "font";
+
 /* Spacing variables (for margin, padding, ...) */
 $spacing-xxs: 0.25em;
 $spacing-xs: 0.5em;
@@ -26,14 +28,14 @@ $black-color: #151515;
 $error-color: #FF6161;
 
 /* Size variables */
-$font-regular-size: 0.9rem; 
-$font-title-size: 1.5rem; 
-$font-xtitle-size: 2.25rem; 
+$font-regular-size: 0.9rem;
+$font-title-size: 1.5rem;
+$font-xtitle-size: 2.25rem;
 
 /* weight variables */
-$font-title-weight: $normal-weight; 
-$font-xtitle-weight: $bold-weight; 
-$font-regular-weight: $normal-weight;  
+$font-title-weight: $normal-weight;
+$font-xtitle-weight: $bold-weight;
+$font-regular-weight: $normal-weight;
 $font-medium-weight: $medium-weight;
 
 /* Form variables */
@@ -46,7 +48,7 @@ $input-border-radius: 15px;
 $input-border: 1px solid rgba(177, 177, 177, 0.2);
 $input-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 $input-font-size: $font-regular-size;
-$input-font-weight: $font-medium-size;
+$input-font-weight: $font-regular-weight;
 $input-bg-color: $second-color-lighter;
 
 /* Button variables */
