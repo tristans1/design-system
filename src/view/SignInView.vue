@@ -4,8 +4,10 @@
     </div>
 </template>
 <script>
+
+
     export default {
-        name: 'SignInView',
+        name: 'SignInView', 
     };
 </script>
 <style scoped lang="scss"></style>
