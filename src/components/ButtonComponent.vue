@@ -25,12 +25,15 @@ export default {
 @import '../assets/scss/variable';
 
 button {
-    border        : $button-border;
-    border-radius : $button-border-radius;
-    min-width     : $button-minWidth;
-    padding       : $button-padding;
-    font-family   : $primary-font-main;
-    font-size     : $font-regular-size;
+    
+    
+    text-align     : center;
+    border         : $button-border;
+    border-radius  : $button-border-radius;
+    min-width      : $button-minWidth;
+    padding        : $button-padding;
+    font-family    : $primary-font-main;
+    font-size      : $font-regular-size;
 }
 
 .button-main {
