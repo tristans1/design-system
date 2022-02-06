@@ -15,8 +15,9 @@
     import ButtonComponent from '../components/ButtonComponent';
     import FlexContainerComponent from '../components/FlexContainerComponent';
     import FormContainerComponent from '../components/FormContainerComponent';
-    import FormInputComponent from '../components/FormInputComponent';
-    import TextComponent from '../components/TextComponent';
+    import FormInputComponent     from '../components/FormInputComponent';
+    import TextComponent          from '../components/TextComponent';
+    import ButtonComponent        from '../components/ButtonComponent.vue';
 
     export default {
         name: 'SignInView',
@@ -26,7 +27,9 @@
             TextComponent,
             FormContainerComponent,
             FormInputComponent,
+            ButtonComponent,
         },
     };
 </script>
+
 
