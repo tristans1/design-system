@@ -71,31 +71,31 @@
     @import "../assets/scss/variable";
 
     .form-control{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-bottom: $spacing-l;
+        display        : flex;
+        flex-direction : column;
+        text-align     : left;
+        margin-bottom  : $spacing-l;
         label {
-            font-size: $font-small-size;
-            color: $second-color-light;
-            padding-left: $spacing-m;
+            font-size    : $font-small-size;
+            color        : $second-color-light;
+            padding-left : $spacing-m;
         }
         .input-control {
-            border: $input-border;
-            border-radius: $input-border-radius;
-            padding: $spacing-l;
+            border        : $input-border;
+            border-radius : $input-border-radius;
+            padding       : $spacing-l;
             &:focus-within {
-                outline: $input-outline;
+                outline : $input-outline;
             }
             input{
-                font-size: $font-regular-size;
-                font-weight: $font-regular-weight;
-                font-family: $primary-font-main;
-                border: none;
-                outline: none;
+                font-size   : $font-regular-size;
+                font-weight : $font-regular-weight;
+                font-family : $primary-font-main;
+                border      : none;
+                outline     : none;
                 &::placeholder {
-                    font-family: $primary-font-main;
-                    color: $second-color-darker;
+                    font-family : $primary-font-main;
+                    color       : $second-color-darker;
                 }
             }
         }
