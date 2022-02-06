@@ -13,7 +13,6 @@
 </script>
 <style scoped lang="scss">
     @import "../../assets/scss/variable";
-
     .icon {
         color: $icon-color;
         font-size: $icon-size;

@@ -16,6 +16,7 @@
     import FormInputComponent from '../components/FormInputComponent';
     import ButtonComponent from '../components/ButtonComponent';
     import TextComponent from '../components/TextComponent';
+
     export default {
         name: 'ForgotPassword',
         components: {
@@ -23,8 +24,8 @@
             FlexContainerComponent,
             FormInputComponent,
             ButtonComponent,
-            TextComponent
-        }
+            TextComponent,
+        },
     };
 </script>
 

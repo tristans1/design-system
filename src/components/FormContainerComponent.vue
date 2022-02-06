@@ -10,7 +10,6 @@
 </script>
 <style scoped lang="scss">
     @import "../assets/scss/variable";
-
     .form-container {
         display: flex;
         flex-direction: column;

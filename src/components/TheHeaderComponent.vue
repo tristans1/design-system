@@ -7,6 +7,7 @@
 </template>
 <script>
     import TextComponent from './TextComponent';
+
     export default {
         name: 'TheHeaderComponent',
         components: {TextComponent},
@@ -14,7 +15,6 @@
 </script>
 <style scoped lang="scss">
     @import "../assets/scss/variable";
-
     nav {
         padding: $spacing-m;
         background-color: $header-bg;

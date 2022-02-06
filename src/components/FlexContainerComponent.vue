@@ -13,7 +13,7 @@
     .flex-container {
         display: flex;
         align-items: baseline;
-        gap: $spacing-xs ;
+        gap: $spacing-xs;
         justify-content: center;
     }
 </style>

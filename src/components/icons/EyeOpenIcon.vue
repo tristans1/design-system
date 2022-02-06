@@ -3,6 +3,7 @@
 </template>
 <script>
     import {Icon} from '@iconify/vue2';
+
     export default {
         name: 'EyeOpenIcon',
         components: {
@@ -12,10 +13,9 @@
     };
 </script>
 <style scoped lang="scss">
-     @import "../../assets/scss/variable";
-
-     .icon {
-         color: $icon-color;
-         font-size: $icon-size;
-     }
+    @import "../../assets/scss/variable";
+    .icon {
+        color: $icon-color;
+        font-size: $icon-size;
+    }
 </style>

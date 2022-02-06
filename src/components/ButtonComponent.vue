@@ -9,7 +9,7 @@
         props: {
             type: {
                 type: String,
-                required: true
+                required: true,
             },
             styleType: {
                 type: String,

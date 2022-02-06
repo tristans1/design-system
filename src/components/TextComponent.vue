@@ -1,9 +1,5 @@
 <template>
-    <component
-        :is="tag"
-        :class="className"
-        :to="{ name: routeName}"
-    >
+    <component :is="tag" :class="className" :to="{ name: routeName}">
         <slot></slot>
     </component>
 </template>
@@ -13,26 +9,25 @@
         props: {
             tag: {
                 type: String,
-                required: true
+                required: true,
             },
             className: {
                 type: String,
                 default: function () {
-                    return this.tag
-                }
+                    return this.tag;
+                },
             },
             routeName: {
                 type: String,
                 default: function () {
-                    return ''
-                }
-            }
-        }
+                    return '';
+                },
+            },
+        },
     };
 </script>
 <style scoped lang="scss">
     @import "../assets/scss/variable";
-
     h1,
     .h1 {
         font-size: $font-xtitle-size;
@@ -41,7 +36,7 @@
         text-align: center;
     }
     h2,
-    .h2{
+    .h2 {
         font-size: $font-title-size;
         font-weight: $font-title-weight;
         margin-bottom: $spacing-m;
@@ -54,7 +49,7 @@
         margin-bottom: $spacing-xs;
     }
     a,
-    .router-link{
+    .router-link {
         font-size: $font-regular-size;
         font-weight: $font-regular-weight;
         color: $link-color;
@@ -65,5 +60,4 @@
             text-decoration: $link-hover-underline;
         }
     }
-
 </style>
