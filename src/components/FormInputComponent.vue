@@ -1,7 +1,7 @@
 <template>
     <div class="form-control">
         <label :for="name"> {{ label }}</label>
-        <FlexContainerComponent class="input-control">
+        <flex-container-component class="input-control">
             <input class="flex-grow-1"
                    :type="inputType"
                    :name="name" :id="name"
@@ -13,10 +13,10 @@
                 @click="showPassword"
                 type="button"
                 class="btn-transparent flex-grow-0">
-                <EyeOpenIcon v-if="inputType === 'password'"/>
-                <EyeCloseIcon v-if="inputType === 'text'"/>
+                <eye-open-icon v-if="inputType === 'password'"/>
+                <eye-close-icon v-if="inputType === 'text'"/>
             </button>
-        </FlexContainerComponent>
+        </flex-container-component>
     </div>
 </template>
 <script>
@@ -71,32 +71,33 @@
     @import "../assets/scss/variable";
 
     .form-control{
-        display        : flex;
-        flex-direction : column;
-        text-align     : left;
-        margin-bottom  : $spacing-l;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: $spacing-l;
         label {
-            font-size    : $font-small-size;
-            color        : $second-color-light;
-            padding-left : $spacing-m;
+            font-size: $font-small-size;
+            color: $second-color-light;
+            padding-left: $spacing-m;
         }
         .input-control {
-            border        : $input-border;
-            border-radius : $input-border-radius;
-            padding       : $spacing-l;
-            &:focus-within {
-                outline : $input-outline;
-            }
+            border: $input-border;
+            border-radius: $input-border-radius;
+            padding: $spacing-l;
+            background-color: $input-bg-color;
             input{
-                font-size   : $font-regular-size;
-                font-weight : $font-regular-weight;
-                font-family : $primary-font-main;
-                border      : none;
-                outline     : none;
+                font-weight: $input-font-weight;
+                font-size: $input-font-size;
+                font-family: $primary-font-main;
+                border: none;
+                outline: none;
                 &::placeholder {
-                    font-family : $primary-font-main;
-                    color       : $second-color-darker;
+                    font-family: $primary-font-main;
+                    color: $second-color-darker;
                 }
+            }
+            &:focus-within {
+                outline: $input-outline;
             }
         }
     }

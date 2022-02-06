@@ -1,19 +1,18 @@
 <template>
-    <div>
-        <FormContainerComponent>
-            <TextComponent tag="h1">Sign in</TextComponent>
-            <FlexContainerComponent>
-                <TextComponent tag="h2">Not signed up ?</TextComponent>
-                <TextComponent tag="router-link" route-name="SignUpView">Register</TextComponent>
-            </FlexContainerComponent>
-            <FormInputComponent label="Email" placeholder="Email" name="email" type="email"/>
-            <FormInputComponent label="Password" placeholder="Password" name="password" type="password"/>
-            <TextComponent tag="router-link" route-name="ForgotPassword">Forgot password ?</TextComponent>
-            <ButtonComponent buttonColorType="main">Sign in</ButtonComponent>
-        </FormContainerComponent>
-    </div>
+    <form-container-component>
+        <text-component tag="h1">Sign in</text-component>
+        <flex-container-component>
+            <text-component tag="h2">Not signed up ?</text-component>
+            <text-component tag="router-link" route-name="SignUpView">Register</text-component>
+        </flex-container-component>
+        <form-input-component label="Email" placeholder="Email" name="email" type="email"/>
+        <form-input-component label="Password" placeholder="Password" name="password" type="password"/>
+        <text-component tag="router-link" route-name="ForgotPassword">Forgot password ?</text-component>
+        <button-component style-type="alt" type="submit">Sign In</button-component>
+    </form-container-component>
 </template>
 <script>
+    import ButtonComponent from '../components/ButtonComponent';
     import FlexContainerComponent from '../components/FlexContainerComponent';
     import FormContainerComponent from '../components/FormContainerComponent';
     import FormInputComponent     from '../components/FormInputComponent';
@@ -23,6 +22,7 @@
     export default {
         name: 'SignInView',
         components: {
+            ButtonComponent,
             FlexContainerComponent,
             TextComponent,
             FormContainerComponent,
