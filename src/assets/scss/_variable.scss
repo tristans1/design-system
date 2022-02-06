@@ -1,6 +1,7 @@
 @import "font";
 
 /* Spacing variables (for margin, padding, ...) */
+$spacing-auto: auto;
 $spacing-xxs: 0.25em;
 $spacing-xs: 0.5em;
 $spacing-s: 0.75em;
@@ -10,38 +11,41 @@ $spacing-xl: 1.50em;
 $spacing-xxl: 1.75em;
 
 /* Color palette variables */
-$main-color: #392E7E;
-$main-color-light: #3F338A;
-$main-color-lighter: #5D4BC9;
-$main-color-dark: #2D2563;
-$main-color-darker: #1C173D;
-
-$second-color: #B1B1B1;
-$second-color-light: #BDBDBD;
-$second-color-lighter: #FCFCFC;
+$main-color: #392e7e;
+$main-color-light: #3f338a;
+$main-color-lighter: #5d4bc9;
+$main-color-dark: #2d2563;
+$main-color-darker: #1c173d;
+$second-color: #b1b1b1;
+$second-color-light: #bdbdbd;
+$second-color-lighter: #fcfcfc;
 $second-color-dark: #969696;
 $second-color-darker: #707070;
-
-$white-color: #FFF;
+$white-color: #ffffff;
 $black-color: #151515;
+$error-color: #ff6161;
 
-$error-color: #FF6161;
+/* Color variables opacity */
+$main-color-opacity: rgba(57, 46, 126, 0.4);
+$second-color-opacity: rgba(177, 177, 177, 0.4);
 
 /* Size variables */
+$font-small-size: 0.75rem;
 $font-regular-size: 0.9rem;
 $font-title-size: 1.5rem;
-$font-xtitle-size: 2.25rem;
+$font-xtitle-size: 1.875rem;
 
 /* weight variables */
-$font-title-weight: $normal-weight;
-$font-xtitle-weight: $bold-weight;
 $font-regular-weight: $normal-weight;
 $font-medium-weight: $medium-weight;
+$font-title-weight: $normal-weight;
+$font-xtitle-weight: $bold-weight;
 
 /* Form variables */
 $form-border-radius: 15px;
 $form-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 $form-bg-color: $second-color-lighter;
+$form-width: 500px;
 
 /* Input variables*/
 $input-border-radius: 15px;
@@ -50,6 +54,7 @@ $input-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 $input-font-size: $font-regular-size;
 $input-font-weight: $font-regular-weight;
 $input-bg-color: $second-color-lighter;
+$input-outline: 1px solid $second-color;
 
 /* Button variables */
 $button-minWidth: 235px;
@@ -57,14 +62,23 @@ $button-box-sizing: border-box;
 $button-border-radius: 50px;
 $button-border: 1px solid $main-color;
 $button-padding: 12px 24px;
-
-$button-normal-bg-color: $main-color;
-$button-normal-font-color: $second-color-lighter;
-
-$button-hover-bg-color: $second-color-lighter;
-$button-hover-font-color: $main-color;
-
-$button-alter-bg-color: $second-color-light;
-$button-alter-font-color: $main-color;
+$btn-main-bg: $main-color;
+$btn-main-color: $second-color-lighter;
+$btn-main-hover-bg: $main-color-dark;
+$btn-alt-bg: $second-color-light;
+$btn-alt-color: $main-color;
+$btn-alt-hover-bg: $main-color-opacity;
 
 /* Link variables */
+$link-color: $main-color;
+$link-hover-color: $main-color-dark;
+$link-underline: underline $main-color;
+$link-hover-underline: underline $main-color-darker;
+
+/* Header variables */
+$header-bg: $main-color;
+$header-color: $second-color-lighter;
+
+/*Icons variables*/
+$icon-color: $main-color;
+$icon-size: 20px;
